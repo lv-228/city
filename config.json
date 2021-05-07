@@ -1,0 +1,56 @@
+{
+	"db": 
+	{
+		"host": "10.2.64.64:3316",
+		"user": "script",
+		"password": "g1b2d3j4",
+		"type": "mysql",
+		"database": "city"
+	},
+	"resol":
+	{
+		"7":
+		{
+			"page_controller": ["main", "company_page", "tender_list", "company_fine", "company_services", "tender", "create_request", "request"],
+			"user_controller": "logout",
+			"model_create": "get_table",
+			"data_controller": ["add_staff", "add_c_doc", "delete_c_doc", "create_adver", "delete_adver", "part_in_tender", "add_c_img", "create_request", 
+				"delete_request"]
+		},
+		"4":
+		{
+			"page_controller": ["apark", "main", "user_page", "create_request", "request", "company_services", "news_list", "news", "user_fine"],
+			"user_controller": "logout",
+			"data_controller": ["create_request", "delete_request", "bind_card", "add_u_doc", "delete_u_doc"]
+		},
+		"3": 
+		{
+			"user_controller": "logout",
+			"page_controller": ["main", "apark", "company_list", "user_page", "company_page", "create_complaint", "create_fine", 
+				"create_request", "create_tender", "found_tender", "news", "news_list", "request", "request_list", "tender", "user_fine", "user_list", 
+				"company_fine", "create_adver", "company_services", "tender_list"],
+			"testcontroller": "test",
+			"news_controller": ["create_page", "create"],
+			"data_controller": ["delete_a_ticket", "order_ticket", "delete_a_card", "create_a_card", "bind_card", "delete_u_doc", 
+				"create_complaint", "create_fine", "delete_fine", "create_request", "delete_request", 
+				"create_tender", "answer_request", "delete_user", "delete_complaint", "delete_adver", "delete_news", "declare_winner", "add_u_doc"],
+			"model_create": "get_table"
+		},
+		"0":
+		{
+			"page_controller": ["main", "registration", "apark"],
+			"user_controller": ["auth", "logout", "create_user", "create_company"],
+			"model_create": "get_table"
+		}
+	},
+	"main":
+	{
+		"page_controller": "main"
+	},
+	"cookie_fields":{
+		"login":"",
+		"role":""
+	},
+	"salt_type": "$6$rounds=5000$",
+	"upload_dir": "/views/img/"
+}
